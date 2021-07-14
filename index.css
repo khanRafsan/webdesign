@@ -1,0 +1,140 @@
+*{
+     margin:0;
+     padding:0;
+     box-sizing: border-box;
+}
+header{
+     background-color: rgba(0, 0, 255, 0.568);
+     padding:80px;
+}
+.menu-bar i{
+     visibility: hidden;
+}
+
+.links{
+     display: flex;
+justify-content: flex-end;
+}
+
+.links a{
+     padding: 10px;
+     text-decoration: none;
+font-weight: 700;
+}
+.links a:hover{
+     color: brown;
+background-color: gray;
+}
+ .heading button{
+     
+     transition: padding 2s;
+}
+.heading:hover{
+     
+     padding:10px
+}
+.header-container{
+     margin-top: 100px;
+     display: flex;
+}
+  .heading {
+     width: 60%;
+}
+.heading-photo{
+     width: 40%;
+}
+.heading-photo  img{
+     width:70%;
+}
+
+
+.photo-container{
+     display: grid;
+     grid-template-columns:repeat(3,1fr);
+ text-align: center;
+ margin-top: 20px;
+ grid-row-gap: 40px;
+
+}
+
+
+.player-photo img{
+     width:70%;
+     padding: 10px;
+     background-color: burlywood;
+}
+.photo-container p{
+     font-weight:700;
+}
+.third-section{
+     display:grid;
+     grid-template-columns: repeat(2,1fr);
+text-align:center;
+margin-top:50px;
+background-color: burlywood;
+}
+
+.third-section .highlight-details{
+margin-top: 10%;
+} 
+
+.heighlight-picture img{
+      width:70%;
+      border-radius:50%
+ } 
+
+footer{
+width: 100%;
+text-align: center;
+}
+
+ footer img{
+      width:50%;
+     
+ }
+ .socials-links img{
+     width:50px;
+     display:inline;
+     
+ }
+ .socials-links img:hover{
+      background-color:crimson
+ }
+
+ /***************** 
+ Responsive design for mobile 
+ ***************/
+
+@media only screen and (max-width:600px){
+body{
+     max-width: 100%;
+background-color:burlywood ;
+}
+
+.menu-bar i {
+ visibility: visible;
+ position: relative;
+}
+
+
+header .links {
+     flex-direction: column;
+     justify-content: center;
+     align-items: center; 
+    
+}
+.heading-photo img{
+     margin: 40px;
+}
+
+ 
+
+.photo-container{
+     display: grid;
+     grid-template-columns: repeat(1,1fr);
+}
+.third-section{
+     display: flex;
+     flex-direction: column;
+}
+} 
